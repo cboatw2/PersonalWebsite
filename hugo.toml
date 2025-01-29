@@ -86,7 +86,7 @@ theme = "triple-hyde"
     name = "CV"
     identifier = "cv"
     weight = 250
-    url = "/icons/"
+    url = "/cv/"
 [[menu.main]]
     name = "About"
     identifier = "about"
