@@ -2,7 +2,7 @@
 baseurl = "https://example.com/"
 languageCode = "en"
 
-title = "Candy Rae Boatwright"
+title = "Candy Boatwright"
 theme = "triple-hyde"
 
 ## Hugo Built-in Features
@@ -17,7 +17,7 @@ theme = "triple-hyde"
     author = "Author"
     title = "Title"
     # description = "..."
-    authorimage = "/img/hugo.png"
+    # authorimage = "/img/hugo.png"
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license
