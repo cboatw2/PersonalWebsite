@@ -2,7 +2,7 @@
 baseurl = "https://example.com/"
 languageCode = "en"
 
-title = "Candy Boatwright"
+title = "Candy Rae Boatwright"
 theme = "triple-hyde"
 
 ## Hugo Built-in Features
@@ -83,8 +83,8 @@ theme = "triple-hyde"
     weight = 200
     url = "/portfolio/"
 [[menu.main]]
-    name = "Icons"
-    identifier = "icons"
+    name = "CV"
+    identifier = "cv"
     weight = 250
     url = "/icons/"
 [[menu.main]]
