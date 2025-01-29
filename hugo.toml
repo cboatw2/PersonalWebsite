@@ -2,7 +2,7 @@
 baseurl = "https://example.com/"
 languageCode = "en"
 
-title = "Title"
+title = "Candy Rae Boatwright"
 theme = "triple-hyde"
 
 ## Hugo Built-in Features
@@ -57,17 +57,17 @@ theme = "triple-hyde"
 
 ## Social Accounts
 [params.social]
-    github = "<username>"
-    instagram = "<username>"
-    linkedin = "<username>"
-    twitter = "<username>"
-    facebook = "<username>"
-    stackoverflow = "<username>"
-    telegram = "<username>"
+    github = "<cboatw2>"
+    instagram = "<candyraeboatwright>"
+    linkedin = "<candy-rae-boatwright-871429244>"
+    # twitter = "<username>"
+    facebook = "<candyraeboatwright>"
+    # stackoverflow = "<username>"
+    # telegram = "<username>"
     # orcid = "<xxxx-xxxx-xxxx-xxxx>"
-    email = "your-email@example.com"
-    mastodon = "<username>"
-    threads = "@<username>"
+    email = "cboatw2@clemson.edu"
+    # mastodon = "<username>"
+    # threads = "@<username>"
     # gravatar = "your-email@example.com"
     # pgpkey = "<path-to-your-key-in-/static>"
 
