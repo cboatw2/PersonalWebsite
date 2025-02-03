@@ -34,7 +34,7 @@
       <link>http://localhost:1313/cv/</link>
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/cv/</guid>
-      <description>&lt;p&gt;If I add text here will it show up?&lt;/p&gt;</description>
+      <description>&lt;p&gt;If I add text here will it show up?&#xA;It did! Woohoo! So where did the button come from?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Project P1&#39;s Title</title>
