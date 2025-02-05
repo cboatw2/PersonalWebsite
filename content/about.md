@@ -4,7 +4,7 @@ description: "A short description"
 date: '2018-01-02'
 link: 'https://about.com'
 #screenshot: 'p1.png'
-layout: 'single.html'
+layout: 'about'
 featured: false
 ---
 I like to read cursive. Really. Which is convenient since I study early and antebellum southern history. Periods that produced a surprising amount of documents written in cursive.
