@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project P1&#39;s Title on Candy Rae Boatwright</title>
+    <title>Triple Hyde Documentation on Candy Rae Boatwright</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Project P1&#39;s Title on Candy Rae Boatwright</description>
+    <description>Recent content in Triple Hyde Documentation on Candy Rae Boatwright</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate>
@@ -30,18 +30,11 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/htr3n/laramod&#34;&gt;LaraMod&lt;/a&gt; is another modularisation effort to systematically organising a &lt;a href=&#34;https://laravel.com&#34;&gt;Laravel&lt;/a&gt; based project. The idea stems from my struggle to structure a Laravel-based project so that I can work effectively on individual modules whilst keeping Laravel codebase intact as much as possible and also keeping the project&amp;rsquo;s codebase separate from Laravel.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My CV</title>
-      <link>http://localhost:1313/cv/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cv/</guid>
-      <description>&lt;p&gt;If I add text here will it show up?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Project P1&#39;s Title</title>
+      <title>About Me</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description></description>
+      <description>&lt;p&gt;I like to read cursive. Really. Which is convenient since I study early and antebellum southern history. Periods that produced a surprising amount of documents written in cursive.&lt;/p&gt;&#xA;&lt;p&gt;Why isn&amp;rsquo;t anything changing? It is. Just nothing that I&amp;rsquo;m trying to change.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Project P1&#39;s Title</title>
@@ -49,6 +42,13 @@
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/myfirstpost/</guid>
       <description>&lt;p&gt;Here is a longer summary of the project. You can write as long as you wish.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My CV</title>
+      <link>http://localhost:1313/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cv/</guid>
+      <description>&lt;p&gt;If I add text here will it show up?&#xA;It did! Woohoo! So where did the button come from?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

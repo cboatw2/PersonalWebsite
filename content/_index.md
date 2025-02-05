@@ -1,10 +1,9 @@
 ---
-title: "Project P1's Title"
-description: "A short description"
-date: '2018-01-02'
-link: 'https://project-p1.com'
-screenshot: 'p1.png'
-layout: 'portfolio'
-featured: true
+author: "Derme"
+date: 2024-06-25
+linktitle: Triple Hyde Documentation
+title: Triple Hyde Documentation
+categories: [ "Development", "hugo" ]
+tags: ["hugo", "theme", "html"]
+weight: 10
 ---
-Here is a longer summary of the project. You can write as long as you wish.
