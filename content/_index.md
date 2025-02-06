@@ -7,3 +7,5 @@ screenshot: 'p1.png'
 layout: 'portfolio'
 featured: true
 ---
+
+This is your homepage.

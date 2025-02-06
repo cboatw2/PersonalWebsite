@@ -9,3 +9,5 @@ featured: true
 ---
 Here is a longer summary of the project. You can write as long as you wish.
 
+![Poinsett Bridge](/images/image.png)
+

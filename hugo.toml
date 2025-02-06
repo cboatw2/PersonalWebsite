@@ -99,3 +99,7 @@ theme = "triple-hyde"
 # [[services.disqus]]
     # shortname = 'GA-YOURID'
 
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+
