@@ -19,6 +19,7 @@ theme = "triple-hyde"
     # description = "Candy Rae Boatwright"
     # authorimage = "/img/hugo.png"
     dateformat = "Jan 2, 2006"
+    mainSections = ["_index.md"]
 
     # sidebar, copyright & license
     logoimage = "/images/B.png"
