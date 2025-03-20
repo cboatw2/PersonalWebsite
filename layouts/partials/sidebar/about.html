@@ -3,9 +3,11 @@
     {{ with .Site.Params.logoimage }}
     {{ $strippedSlash := ($.Site.Params.logoimage | replaceRE "^(/)+(.*)" "$2") }}
     {{ $logoImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
-      <img src="{{$logoImage}}" alt="Logo Image" class="logo">
+      <a href="/about/">
+        <img src="{{$logoImage}}" alt="Logo Image" class="logo">
+      </a>
     {{ else }}
-      {{ .Site.Title }}
+      <a href="/about/">{{ .Site.Title }}</a>
     {{ end }}
   </span>
   {{ if and (isset .Site.Params "authorimage") (not (isset .Site.Params.social "gravatar")) }}
