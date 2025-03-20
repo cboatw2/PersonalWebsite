@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project P1&#39;s Title on Candy Boatwright</title>
+    <title>About Me on Candy R. Boatwright</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Project P1&#39;s Title on Candy Boatwright</description>
+    <description>Recent content in About Me on Candy R. Boatwright</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate>
@@ -35,13 +35,6 @@
       <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/laramod/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/htr3n/laramod&#34;&gt;LaraMod&lt;/a&gt; is another modularisation effort to systematically organising a &lt;a href=&#34;https://laravel.com&#34;&gt;Laravel&lt;/a&gt; based project. The idea stems from my struggle to structure a Laravel-based project so that I can work effectively on individual modules whilst keeping Laravel codebase intact as much as possible and also keeping the project&amp;rsquo;s codebase separate from Laravel.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;I like to read cursive. Really. Which is convenient since I study early and antebellum southern history. Periods that produced a surprising amount of documents written in cursive.&lt;/p&gt;&#xA;&lt;p&gt;Why isn&amp;rsquo;t anything changing? It is. Just nothing that I&amp;rsquo;m trying to change.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

@@ -1,8 +1,8 @@
 ## Basic Configuration
-baseurl = "https://example.com/"
+baseurl = "https://candyrboatwright.net/"
 languageCode = "en"
 
-title = "Candy Boatwright"
+title = "Candy R. Boatwright"
 theme = "triple-hyde"
 
 ## Hugo Built-in Features
@@ -14,12 +14,12 @@ theme = "triple-hyde"
 
 ## Site Settings
 [params]
-    author = "Author"
+    author = "Candy R. Boatwright"
     title = "Title"
-    # description = "Candy Rae Boatwright"
-    # authorimage = "/img/hugo.png"
+    #description = "Candy Rae Boatwright"
+    #authorimage = "/img/hugo.png"
     dateformat = "Jan 2, 2006"
-    mainSections = ["_index.md"]
+    mainSections = ["about", "posts", "portfolio", "cv"]
 
     # sidebar, copyright & license
     logoimage = "/images/B.png"
