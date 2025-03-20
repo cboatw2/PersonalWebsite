@@ -1,6 +1,5 @@
 <div class="sidebar-about">
   <span class="site__title">
-    <a href="/about/">
     {{ with .Site.Params.logoimage }}
     {{ $strippedSlash := ($.Site.Params.logoimage | replaceRE "^(/)+(.*)" "$2") }}
     {{ $logoImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
