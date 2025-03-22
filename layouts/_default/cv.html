@@ -1,0 +1,44 @@
+{{ define "header" }}
+    {{ partial "page-single/variables-init.html" . }}
+    {{ partial "header.html" . }}
+{{ end }}
+
+{{ define "content" }}
+    <div style="text-align: center;">
+        <h1>Curriculum Vitae</h1>
+    </div>
+    <div style="font-size: 16px;">
+        <h2>Education:</h2>
+        <p>PhD Digital History, Clemson University (in progress)<br>
+        <p>MA History, Clemson University, Spring 2024</p>
+
+        <h2>Employment:</h2>
+        <p>Research Assistant, Woodland Cemetery Project at Clemson University, Fall 2023 - present</p>
+        <p>Visitor Engagement/Focus Group Moderator, “Americans and the Holocaust” Exhibit of the United States Holocaust Memorial Museum at Furman University, Spring 2023</p>
+
+        <h2>Scholarship:</h2>
+        <p>“The Carolina Housewife: A Study in Contrasts” submitted for department award, Clemson University/Dr. Alan Grubb, 2022</p>
+        <p>Master’s Thesis: “The Lost Cause of Unionism: How Greenville became a Failed Stronghold of Unionism in Antebellum South Carolina”</p>
+
+        <h2>Digital Projects:</h2>
+        <p>“Sarah L. Hall, ‘Sown in the Stars: Planting by the Signs’”. New Books in Food, New Books Network, July 3, 2023. <a href="https://newbooksnetwork.com/sown-in-the-stars">https://newbooksnetwork.com/sown-in-the-stars</a> (Host)</p>
+
+        <h2>Service:</h2>
+        <p>Greenville County Historical Society Board Member, 2022-present</p>
+        <p>Collections processing</p>
+        <p>Provided research assistance for general public regarding family history, historic properties and Greenville area</p>
+        <p>Field survey of 1820s bridge abutments with GCHS archeologist and board members</p>
+        <p>Community outreach and planning</p>
+
+        <h2>Digital Humanities Skills:</h2>
+        <p>GIS and Data Visualization Workshop, Clemson University, 2022</p>
+
+        <h2>Awards:</h2>
+        <p>Ernest McPherson Lander Jr. Award, Clemson University, 2024</p>
+    </div>
+{{ end }}
+
+{{ define "footer" }}
+    {{ partial "page-single/footer.html" . }}
+    {{ partial "page-single/variables-deinit.html" . }}
+{{ end }}
