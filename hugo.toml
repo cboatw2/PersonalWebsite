@@ -100,6 +100,10 @@ theme = "triple-hyde"
 # [[services.disqus]]
     # shortname = 'GA-YOURID'
 
+[markup] #allows raw HTML in markdown
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 ignoreLogs = ['warning-goldmark-raw-html']
 
