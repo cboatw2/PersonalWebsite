@@ -17,6 +17,15 @@
     <loc>http://localhost:1313/portfolio/</loc>
     <lastmod>2024-05-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/josephmcculloughhouse/</loc>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/digitaltoolswebsite/</loc>
+    <lastmod>2022-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/finalproject/</loc>
+    <lastmod>2022-12-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/tableau/</loc>
     <lastmod>2022-11-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -57,8 +66,6 @@
     <lastmod>2018-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolio/content/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/finalproject/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

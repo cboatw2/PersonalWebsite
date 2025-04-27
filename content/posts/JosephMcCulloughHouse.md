@@ -1,5 +1,5 @@
 ---
-title: "Joseph McCullough House, Fork Shoals, SC"
+title: "Joseph McCullough House"
 date: '2023-01-17'
 layout: 'single'
 featured: true
