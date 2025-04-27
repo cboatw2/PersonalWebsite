@@ -4,7 +4,7 @@ date: '2025-03-18'
 layout: 'single'
 featured: true
 ---
-![Poinsett Bridge](/images/image.png)
+![Poinsett Bridge](/images/PoinsettBridge.png)
 
 The Poinsett Bridge in the upper part of Greenville County, South Carolina... 
 
