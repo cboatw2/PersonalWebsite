@@ -1,7 +1,7 @@
 <span class="section__title">{{ .Title | default "Projects" }}</span>
 <div class="portfolio__content">
-    {{ if gt (len (where .Pages "Title" "CSI: Greenville")) 0 }}
-    {{ range (where .Pages "Title" "CSI: Greenville") }}
+    {{ if gt (len .Pages) 0 }}
+        {{ range .Pages }}
             <section class="portfolio__featured-project">
                 <div class="section-inner">
                     <div class="portfolio_content">
