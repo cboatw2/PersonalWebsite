@@ -58,7 +58,7 @@ theme = "triple-hyde"
 
 ## Social Accounts
 [params.social]
-    github = "<cboatw2>"
+    github = "https://github.com/cboatw2"
     instagram = "<candyraeboatwright>"
     linkedin = "<candy-rae-boatwright-871429244>"
     # twitter = "<username>"
