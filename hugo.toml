@@ -59,10 +59,10 @@ theme = "triple-hyde"
 ## Social Accounts
 [params.social]
     github = "https://github.com/cboatw2"
-    instagram = "<candyraeboatwright>"
-    linkedin = "<candy-rae-boatwright-871429244>"
+    instagram = "https://www.instagram.com/candyraeboatwright/"
+    linkedin = "https://www.linkedin.https://wcom/in/candy-rae-boatwright-871429244"
     # twitter = "<username>"
-    facebook = "<candyraeboatwright>"
+    facebook = "https://www.facebook.com/candyraeboatwright"
     # stackoverflow = "<username>"
     # telegram = "<username>"
     # orcid = "<xxxx-xxxx-xxxx-xxxx>"
