@@ -241,31 +241,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
                         <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
                     </span>
                     <span class="project__summary">
-                        <p>This was created as the final project for the &ldquo;Digital Methods II&rdquo; course at Clemson University. By examining the CSI:Dixie dataset created at the University of Georgia and focusing on the data available for South Carolina, patterns of regionality emerge. Cororners inquest documents form the basis of this dataset and provide not only information about the causes of death prevelant during the 19th century, but also the correlationn between government policies and public health.</p>
-
-                    </span>
-                </div>
-            </div>
-            <div class="row-space">&nbsp;</div>
-            
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/htr3n/laramod"
-                    target="_blank" rel="noopener noreferrer">
-                    
-                        <img class="project__image img-responsive" src="laramod.png" alt="LaraMod">
-                    
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                    <span class="project__title">
-                        <a href="https://github.com/htr3n/laramod" target="_blank" rel="noopener noreferrer">LaraMod</a>
-                    </span>
-                    <span class="project__subtitle-small">
-                        <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
-                        A modularised Laravel framework
-                        <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
-                    </span>
-                    <span class="project__summary">
-                        <p><a href="https://github.com/htr3n/laramod">LaraMod</a> is another modularisation effort to systematically organising a <a href="https://laravel.com">Laravel</a> based project. The idea stems from my struggle to structure a Laravel-based project so that I can work effectively on individual modules whilst keeping Laravel codebase intact as much as possible and also keeping the project&rsquo;s codebase separate from Laravel.</p>
+                        <p>This was created as the final project for the &ldquo;Digital Methods II&rdquo; course at Clemson University. By examining the CSI:Dixie dataset created at the University of Georgia and focusing on the data available for South Carolina, patterns of regionality emerge. Cororners inquest documents form the basis of this dataset and provide not only information about the causes of death prevelant during the 19th century, but also the correlation between government policies and public health.</p>
 
                     </span>
                 </div>
@@ -287,7 +263,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
                         <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
                     </span>
                     <span class="project__summary">
-                        <span class="section__title">Portfolio</span>
+                        <span class="section__title">{{ .Title | default "Projects" }}</span>
 <div class="portfolio__content">
     {{ range first 1 (where .Data.Pages "Params.featured" "==" true) }}
         <section class="portfolio__featured-project">

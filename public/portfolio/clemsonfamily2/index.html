@@ -7,7 +7,7 @@
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     
-    <link rel="canonical" href="http://localhost:1313/portfolio/content/">
+    <link rel="canonical" href="http://localhost:1313/portfolio/clemsonfamily2/">
     
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,21 +19,23 @@
     
     
 
-<title> • Candy R. Boatwright</title>
+<title>LaraMod • Candy R. Boatwright</title>
 
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Candy R. Boatwright">
-  <meta name="twitter:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range first 1 (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;!=&#34; true).ByDate.Reverse }} {{ if .Params.screenshot }} {{ end }} {{ .Title }} {{ .Params.description }} {{ .Content }}   {{ end }}">
+  <meta name="twitter:title" content="LaraMod">
+  <meta name="twitter:description" content="A modularised Laravel framework">
 
-<meta property="og:url" content="http://localhost:1313/portfolio/content/">
+<meta property="og:url" content="http://localhost:1313/portfolio/clemsonfamily2/">
   <meta property="og:site_name" content="Candy R. Boatwright">
-  <meta property="og:title" content="Candy R. Boatwright">
-  <meta property="og:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range first 1 (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;!=&#34; true).ByDate.Reverse }} {{ if .Params.screenshot }} {{ end }} {{ .Title }} {{ .Params.description }} {{ .Content }}   {{ end }}">
+  <meta property="og:title" content="LaraMod">
+  <meta property="og:description" content="A modularised Laravel framework">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="portfolio">
+    <meta property="article:published_time" content="2018-01-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2018-01-19T00:00:00+00:00">
 
 
     
@@ -225,11 +227,13 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
     
 <article>
   <header>
-    <h1></h1>
+    <h1>LaraMod</h1>
     
     
 <div class="post__meta">
     
+    
+      <i class="fas fa-calendar-alt"></i> Jan 19, 2018
     
     
     
@@ -244,64 +248,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
   
   
   <div class="post">
-    <span class="section__title">{{ .Title | default "Projects" }}</span>
-<div class="portfolio__content">
-    {{ range first 1 (where .Data.Pages "Params.featured" "==" true) }}
-        <section class="portfolio__featured-project">
-            <div class="section-inner">
-                <div class="portfolio_content">
-                    <div class="item featured text-center">
-                        <span class="project__title">
-                            <a href="{{ .Params.Link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
-                        </span>
-                        <p class="project__subtitle-big">
-                            <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
-                            {{ .Params.description }}
-                            <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
-                        </p>
-                        <div class="project__featured-image">
-                            {{ if .Params.screenshot }}
-                                <img src="{{ .Params.screenshot }}"  alt="{{ .Title }}">
-                            {{ end }}
-                        </div>
-                        <div class="project__summary">
-                                {{ .Content }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    {{ end }}
-    <section>
-        <div class="portfolio_content">
-            <hr class="divider">
-            {{ range (where .Data.Pages "Params.featured" "!=" true).ByDate.Reverse }}
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12" href="{{ .Params.link }}"
-                    target="_blank" rel="noopener noreferrer">
-                    {{ if .Params.screenshot }}
-                        <img class="project__image img-responsive" src="{{ .Params.screenshot }}" alt="{{ .Title }}">
-                    {{ end }}
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                    <span class="project__title">
-                        <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
-                    </span>
-                    <span class="project__subtitle-small">
-                        <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
-                        {{ .Params.description }}
-                        <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
-                    </span>
-                    <span class="project__summary">
-                        {{ .Content }}
-                    </span>
-                </div>
-            </div>
-            <div class="row-space">&nbsp;</div>
-            {{ end }}
-        </div>
-    </section>
-</div>
+    <p><a href="https://github.com/htr3n/laramod">LaraMod</a> is another modularisation effort to systematically organising a <a href="https://laravel.com">Laravel</a> based project. The idea stems from my struggle to structure a Laravel-based project so that I can work effectively on individual modules whilst keeping Laravel codebase intact as much as possible and also keeping the project&rsquo;s codebase separate from Laravel.</p>
 
   </div>
   
