@@ -25,12 +25,12 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Candy R. Boatwright">
-  <meta name="twitter:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }}">
+  <meta name="twitter:description" content="{{ .Title | default &#34;Projects&#34; }} {{ if gt (len (where .Pages &#34;Title&#34; &#34;CSI: Greenville&#34;)) 0 }} {{ range (where .Pages &#34;Title&#34; &#34;CSI: Greenville&#34;) }} {{ if .Params.Link }} {{ .Title }} {{ else }} {{ .Title }} {{ end }} {{ if .Params.description }} {{ .Params.description }} {{ end }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }} {{ else }} No projects found.">
 
 <meta property="og:url" content="http://localhost:1313/portfolio/content/">
   <meta property="og:site_name" content="Candy R. Boatwright">
   <meta property="og:title" content="Candy R. Boatwright">
-  <meta property="og:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }}">
+  <meta property="og:description" content="{{ .Title | default &#34;Projects&#34; }} {{ if gt (len (where .Pages &#34;Title&#34; &#34;CSI: Greenville&#34;)) 0 }} {{ range (where .Pages &#34;Title&#34; &#34;CSI: Greenville&#34;) }} {{ if .Params.Link }} {{ .Title }} {{ else }} {{ .Title }} {{ end }} {{ if .Params.description }} {{ .Params.description }} {{ end }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }} {{ else }} No projects found.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="portfolio">
@@ -246,33 +246,43 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
   <div class="post">
     <span class="section__title">{{ .Title | default "Projects" }}</span>
 <div class="portfolio__content">
-    {{ range (where .Data.Pages "Params.featured" "==" true) }}
-        <section class="portfolio__featured-project">
-            <div class="section-inner">
-                <div class="portfolio_content">
-                    <div class="item featured text-center">
-                        <span class="project__title">
-                            <a href="{{ .Params.Link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
-                        </span>
-                        <p class="project__subtitle-big">
-                            <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
-                            {{ .Params.description }}
-                            <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
-                        </p>
-                        <div class="project__featured-image">
-                            {{ if .Params.screenshot }}
-                                <img src="{{ .Params.screenshot }}"  alt="{{ .Title }}">
+    {{ if gt (len (where .Pages "Title" "CSI: Greenville")) 0 }}
+    {{ range (where .Pages "Title" "CSI: Greenville") }}
+            <section class="portfolio__featured-project">
+                <div class="section-inner">
+                    <div class="portfolio_content">
+                        <div class="item featured text-center">
+                            <span class="project__title">
+                                {{ if .Params.Link }}
+                                    <a href="{{ .Params.Link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+                                {{ else }}
+                                    {{ .Title }}
+                                {{ end }}
+                            </span>
+                            {{ if .Params.description }}
+                                <p class="project__subtitle-big">
+                                    <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
+                                    {{ .Params.description }}
+                                    <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
+                                </p>
                             {{ end }}
-                        </div>
-                        <div class="project__summary">
+                            {{ if .Params.screenshot }}
+                                <div class="project__featured-image">
+                                    <img src="{{ .Params.screenshot }}" alt="{{ .Title }}">
+                                </div>
+                            {{ end }}
+                            <div class="project__summary">
                                 {{ .Content }}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        {{ end }}
+    {{ else }}
+        <p>No projects found.</p>
     {{ end }}
-   
+</div>
 
   </div>
   

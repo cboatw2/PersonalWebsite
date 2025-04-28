@@ -382,7 +382,7 @@ We had the opportunity to learn about and do some hands-on exercises with HTML a
         
         <span class="section__title">{{ .Title | default "Projects" }}</span>
 <div class="portfolio__content">
-    {{ range (where .Data.Pages "Params.featured" "==" true) }}
+    {{ range .Pages }}
         <section class="portfolio__featured-project">
             <div class="section-inner">
                 <div class="portfolio_content">

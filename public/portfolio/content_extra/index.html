@@ -25,10 +25,12 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Candy R. Boatwright">
+  <meta name="twitter:description" content="{{ range (where .Data.Pages &#34;Params.featured&#34; &#34;!=&#34; true).ByDate.Reverse }} {{ if .Params.screenshot }} {{ end }} {{ .Title }} {{ .Params.description }} {{ .Content }}   {{ end }}">
 
 <meta property="og:url" content="http://localhost:1313/portfolio/content_extra/">
   <meta property="og:site_name" content="Candy R. Boatwright">
   <meta property="og:title" content="Candy R. Boatwright">
+  <meta property="og:description" content="{{ range (where .Data.Pages &#34;Params.featured&#34; &#34;!=&#34; true).ByDate.Reverse }} {{ if .Params.screenshot }} {{ end }} {{ .Title }} {{ .Params.description }} {{ .Content }}   {{ end }}">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="portfolio">
@@ -234,7 +236,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
     
     
     <br/>
-    <i class="fas fa-clock"></i> 0 min read
+    <i class="fas fa-clock"></i> 1 min read
 </div>
 
 
@@ -242,7 +244,36 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
   
   
   <div class="post">
-    
+    <section>
+    <div class="portfolio_content">
+        <hr class="divider">
+        {{ range (where .Data.Pages "Params.featured" "!=" true).ByDate.Reverse }}
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12" href="{{ .Params.link }}"
+                target="_blank" rel="noopener noreferrer">
+                {{ if .Params.screenshot }}
+                    <img class="project__image img-responsive" src="{{ .Params.screenshot }}" alt="{{ .Title }}">
+                {{ end }}
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <span class="project__title">
+                    <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+                </span>
+                <span class="project__subtitle-small">
+                    <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
+                    {{ .Params.description }}
+                    <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
+                </span>
+                <span class="project__summary">
+                    {{ .Content }}
+                </span>
+            </div>
+        </div>
+        <div class="row-space">&nbsp;</div>
+        {{ end }}
+    </div>
+</section>
+</div>
   </div>
   
 </article>

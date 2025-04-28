@@ -1,0 +1,39 @@
+<span class="section__title">{{ .Title | default "Projects" }}</span>
+<div class="portfolio__content">
+    {{ if gt (len (where .Pages "Title" "CSI: Greenville")) 0 }}
+    {{ range (where .Pages "Title" "CSI: Greenville") }}
+            <section class="portfolio__featured-project">
+                <div class="section-inner">
+                    <div class="portfolio_content">
+                        <div class="item featured text-center">
+                            <span class="project__title">
+                                {{ if .Params.Link }}
+                                    <a href="{{ .Params.Link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+                                {{ else }}
+                                    {{ .Title }}
+                                {{ end }}
+                            </span>
+                            {{ if .Params.description }}
+                                <p class="project__subtitle-big">
+                                    <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
+                                    {{ .Params.description }}
+                                    <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
+                                </p>
+                            {{ end }}
+                            {{ if .Params.screenshot }}
+                                <div class="project__featured-image">
+                                    <img src="{{ .Params.screenshot }}" alt="{{ .Title }}">
+                                </div>
+                            {{ end }}
+                            <div class="project__summary">
+                                {{ .Content }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {{ end }}
+    {{ else }}
+        <p>No projects found.</p>
+    {{ end }}
+</div>
