@@ -7,7 +7,7 @@
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     
-    <link rel="canonical" href="http://localhost:1313/portfolio/content/">
+    <link rel="canonical" href="http://localhost:1313/portfolio/content3/">
     
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,12 +25,12 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Candy R. Boatwright">
-  <meta name="twitter:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }}">
+  <meta name="twitter:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;!=&#34; true).ByDate.Reverse }} {{ if .Params.screenshot }} {{ end }} {{ .Title }} {{ .Params.description }} {{ .Content }}   {{ end }}">
 
-<meta property="og:url" content="http://localhost:1313/portfolio/content/">
+<meta property="og:url" content="http://localhost:1313/portfolio/content3/">
   <meta property="og:site_name" content="Candy R. Boatwright">
   <meta property="og:title" content="Candy R. Boatwright">
-  <meta property="og:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }}">
+  <meta property="og:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;!=&#34; true).ByDate.Reverse }} {{ if .Params.screenshot }} {{ end }} {{ .Title }} {{ .Params.description }} {{ .Content }}   {{ end }}">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="portfolio">
@@ -272,7 +272,36 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
             </div>
         </section>
     {{ end }}
-   
+    <section>
+        <div class="portfolio_content">
+            <hr class="divider">
+            {{ range (where .Data.Pages "Params.featured" "!=" true).ByDate.Reverse }}
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12" href="{{ .Params.link }}"
+                    target="_blank" rel="noopener noreferrer">
+                    {{ if .Params.screenshot }}
+                        <img class="project__image img-responsive" src="{{ .Params.screenshot }}" alt="{{ .Title }}">
+                    {{ end }}
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <span class="project__title">
+                        <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+                    </span>
+                    <span class="project__subtitle-small">
+                        <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
+                        {{ .Params.description }}
+                        <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
+                    </span>
+                    <span class="project__summary">
+                        {{ .Content }}
+                    </span>
+                </div>
+            </div>
+            <div class="row-space">&nbsp;</div>
+            {{ end }}
+        </div>
+    </section>
+</div>
 
   </div>
   

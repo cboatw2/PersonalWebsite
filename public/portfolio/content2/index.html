@@ -7,7 +7,7 @@
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     
-    <link rel="canonical" href="http://localhost:1313/portfolio/content/">
+    <link rel="canonical" href="http://localhost:1313/portfolio/content2/">
     
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,12 +25,10 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Candy R. Boatwright">
-  <meta name="twitter:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }}">
 
-<meta property="og:url" content="http://localhost:1313/portfolio/content/">
+<meta property="og:url" content="http://localhost:1313/portfolio/content2/">
   <meta property="og:site_name" content="Candy R. Boatwright">
   <meta property="og:title" content="Candy R. Boatwright">
-  <meta property="og:description" content="{{ .Title | default &#34;Projects&#34; }} {{ range (where .Data.Pages &#34;Params.featured&#34; &#34;==&#34; true) }} {{ .Title }} {{ .Params.description }} {{ if .Params.screenshot }} {{ end }} {{ .Content }} {{ end }}">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="portfolio">
@@ -236,7 +234,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
     
     
     <br/>
-    <i class="fas fa-clock"></i> 1 min read
+    <i class="fas fa-clock"></i> 0 min read
 </div>
 
 
@@ -244,36 +242,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
   
   
   <div class="post">
-    <span class="section__title">{{ .Title | default "Projects" }}</span>
-<div class="portfolio__content">
-    {{ range (where .Data.Pages "Params.featured" "==" true) }}
-        <section class="portfolio__featured-project">
-            <div class="section-inner">
-                <div class="portfolio_content">
-                    <div class="item featured text-center">
-                        <span class="project__title">
-                            <a href="{{ .Params.Link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
-                        </span>
-                        <p class="project__subtitle-big">
-                            <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
-                            {{ .Params.description }}
-                            <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
-                        </p>
-                        <div class="project__featured-image">
-                            {{ if .Params.screenshot }}
-                                <img src="{{ .Params.screenshot }}"  alt="{{ .Title }}">
-                            {{ end }}
-                        </div>
-                        <div class="project__summary">
-                                {{ .Content }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    {{ end }}
-   
-
+    
   </div>
   
 </article>
