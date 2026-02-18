@@ -2,7 +2,7 @@
 title: "CSI: Greenville"
 description: "Government Policies, Public Health and Regionality"
 link: https://github.com/cboatw2/CSI_Greenville.git
-screenshot: CSIScreenshot.png
+screenshot: /images/CSIScreenshot.png
 date: '2024-05-03'
 layout: 'content'
 ---

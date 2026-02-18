@@ -6,8 +6,22 @@
     <description>Recent content in Homepage on Candy R. Boatwright</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://candyrboatwright.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clemson&#39;s Road to Omaha</title>
+      <link>https://candyrboatwright.net/portfolio/clemsonbaseballcws/</link>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://candyrboatwright.net/portfolio/clemsonbaseballcws/</guid>
+      <description>&lt;p&gt;This Omeka S site documents Clemson University&amp;rsquo;s baseball team&amp;rsquo;s appearances at the College World Series. The site showcases the rich history and memorable moments of Clemson Baseball&amp;rsquo;s journey to Omaha, including team rosters, game highlights, and historical context of their CWS appearances.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clemson Family</title>
+      <link>https://candyrboatwright.net/portfolio/clemsonfamily2/</link>
+      <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://candyrboatwright.net/portfolio/clemsonfamily2/</guid>
+      <description>&lt;p&gt;This project was completed as the final project for an independent study in Spring of 2025. The database was created to show the connections between people who are listed on a 1936 map of Clemson College as living in campus housing. A comparison of those people who lived on campus and are also interred at Woodland Cemetery at Cemetery Hill was created to assertain the difference between the two groups. The project utilized Airtable to create the database and R to create the network visualizations.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Poinsett Bridge...and AI</title>
       <link>https://candyrboatwright.net/posts/poinsettbridge/</link>
